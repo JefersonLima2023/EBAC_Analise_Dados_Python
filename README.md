@@ -3,3 +3,6 @@
 
 print('Ola Mundo')
 # teste para validar criação do repositório GitHub Desktop
+
+print('Olá, Mundo!')
+# Atualizei o meu programa com pontuações e acentuações corretas.
