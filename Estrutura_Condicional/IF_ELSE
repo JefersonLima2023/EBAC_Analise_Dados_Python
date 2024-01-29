@@ -1,0 +1,21 @@
+# Exemplo 01 do emprego de estruturas condicionais com IF / ELSE.
+
+codigo_seguranca = '234'
+codigo_seguranca_cadastrado = '234'
+
+pode_pagar = codigo_seguranca == codigo_seguranca_cadastrado
+
+#print(pode_pagar)
+
+# Exemplo 02 do emprego de estruturas condicionais com IF / ELSE com duas variáveis.
+
+codigo_seguranca = '234'
+codigo_seguranca_cadastrado = '234'
+
+senha = '1803'
+senha_cadastrada = '1803'
+
+if (codigo_seguranca == codigo_seguranca_cadastrado) & (senha == senha_cadastrada):
+    print('Pagamento efetuado!')
+else:
+    print('Código de segurança ou Senha incorreto(a). Tente novamente.')
