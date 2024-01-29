@@ -2,7 +2,7 @@
  Repositório para guarda de códigos do curso de análise de dados com Python da escola EBAC.
 
 print('Ola Mundo')
-# teste para validar criação do repositório GitHub Desktop
+# Teste para validar criacao do repositorio GitHub Desktop
 
 print('Olá, Mundo!')
-# Atualizei o meu programa com pontuações e acentuações corretas.
+# Atualizei o meu programa com pontuacoes e acentuacoes corretas.
