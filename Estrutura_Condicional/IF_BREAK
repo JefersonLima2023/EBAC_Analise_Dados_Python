@@ -1,0 +1,7 @@
+numeros= [361, 553, 194, 13, 510, 33, 135]
+for numero in numeros: 
+    if numero % 2 == 0: 
+        print(f'Onumero {numero} é par') 
+        break
+    else: 
+        print(f'Onumero {numero} é impar')

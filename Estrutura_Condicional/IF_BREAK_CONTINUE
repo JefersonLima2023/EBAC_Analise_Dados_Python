@@ -1,0 +1,15 @@
+# A partir de uma lista de números, vamos identificar os números pares e construir uma nova lista apenas com eles, ao final imprimimos a lista com os números pares.
+
+numeros = [361, 553, 194, 13, 510, 33, 135] # Lista de números aleatórios
+numeros_pares = list() # Inicializo uma lista vazia.
+
+for numero in numeros: # Percorro a lista de números testando quais são pares.
+    if numero % 2 == 0:
+        #numeros_pares = list()
+        numeros_pares.append(numero) # Ao encontrar um número par, incluimos ele na lista.
+        #print(f'Os números {numeros_pares} são pares')
+        #break
+    else:
+        continue
+        print(f'O número {numero} é impar')
+print(f'Os números {numeros_pares} são pares')
