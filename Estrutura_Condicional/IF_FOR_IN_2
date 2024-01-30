@@ -1,0 +1,7 @@
+credito = {'123': 750, '456': 812, '789': 980}
+
+for chave in credito.keys():    
+    print(chave)
+    print(credito[chave])
+    print(f'Para o documento {chave}, o valor do escore de crédito é, {credito[chave]}.')
+    print('\n')
