@@ -1,0 +1,15 @@
+emails = [
+    'andre.perez@gmail.com',
+    'andre.perez@live.com',
+    'andre.perez@yahoo.com'
+]
+extrair_provedor_email = lambda email: email.split(sep='@')[-1]
+
+provedores = [] # Criando uma lista vazia. Será preenchida com cada provedor de
+                # email, lido a partir da lista de emails.
+
+for email in emails:
+  provedor = extrair_provedor_email(email)
+  provedores.append(provedor)
+
+print(provedores)

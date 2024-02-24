@@ -1,0 +1,6 @@
+# função map para calcular o cubo de cada número em uma lista.
+
+numeros=[1,2,3,4] 
+numeros_ao_cubo = map(lambda num: num**3, numeros)
+print(list(numeros_ao_cubo))
+

@@ -1,0 +1,7 @@
+# Síntese da função filter
+# variavel = filter(funcao, colecao)
+
+numeros = [1,2,3]
+numeros_impares = filter(lambda num: num % 2 != 0, numeros)
+
+print(list(numeros_impares))

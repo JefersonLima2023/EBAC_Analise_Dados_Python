@@ -1,0 +1,33 @@
+import csv
+
+def extrai_coluna_csv(nome_arquivo: str, indice_coluna: int, tipo_dado: str):
+    coluna = []
+
+    with open(nome_arquivo, 'r') as arquivo:
+        leitor_csv = csv.reader(arquivo)
+        
+        # Itera sobre as linhas do arquivo
+        for linha in leitor_csv:
+            # Adiciona o elemento da coluna à lista
+            coluna.append(linha[indice_coluna])
+    
+    # Converte os elementos da coluna para o tipo de dado especificado
+    if tipo_dado == 'int':
+        coluna = [int(elemento) for elemento in coluna]
+    elif tipo_dado == 'float':
+        coluna = [float(elemento) for elemento in coluna]
+    elif tipo_dado == 'str':
+        # Nenhuma conversão necessária para strings
+        pass
+    else:
+        raise ValueError("Tipo de dado não suportado")
+
+    return coluna
+
+# Exemplo de uso:
+nome_arquivo = 'carros.csv'
+indice_coluna = 1  # Índice da coluna desejada
+tipo_dado = 'float'  # Tipo de dado desejado
+
+coluna_extraida = extrai_coluna_csv(nome_arquivo, indice_coluna, tipo_dado)
+print(coluna_extraida)
